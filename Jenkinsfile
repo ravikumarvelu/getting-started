@@ -12,9 +12,6 @@ pipeline {
 
     stages {
         stage('docker build') {
-            when {
-                branch 'master'
-            }
             steps {
                 sh 'docker build --label v1.0.0 -t myrepo/myapp:v1.0.0'
             }
