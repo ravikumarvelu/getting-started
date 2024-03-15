@@ -13,7 +13,7 @@ pipeline {
     stages {
         stage('docker build') {
             steps {
-                sh 'docker build --label v1.0.0 -t myrepo/myapp:v1.0.0'
+                sh 'docker build  -t myrepo/myapp .'
             }
         }
     }
